@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+.sr-only {
+    color: antiquewhite;
+}
+
+.container {
+    text-align: center;
+    min-height: 100vh;
+    background: url(./jellyfish640x960.jpg) no-repeat center/cover;
+    width: 100vw;
+}
+
+form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(275px, 50%, 700px);
+    margin: 0 auto;
+
+    transition: 500ms ease all;
+}
+
+.link-input {
+    padding: 0.5em 1.25em;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+    width: 100%;
+
+    transition: 500ms ease all;
+}
+
+.overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.28);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    transition: 300ms ease opacity;
+}
+
+body.focus-form form {
+    transition: scale(1.1);
+}
+
+body.focus-form .link-input {
+    padding: 0.75em 1.5em;
+    font-size: 1.5rem;
+}
+body.focus-form .overlay {
+    opacity: 1;
+}
+
+.link-list li {
+    position: relative;
+    width: 100%;
+    margin: 2em 0;
+    background-color: rgb(63, 63, 134);
+    border-radius: 8px;
+    box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+
+    transition: 350ms ease all;
+}
+
+.link {
+    display: block;
+    color: yellowgreen;
+    text-decoration: none;
+    padding: 1.75em 0;
+    cursor: pointer;
+}
+
+.link-list li:hover,
+.link-list li:focus {
+    background-color: aqua;
+    box-shadow: 0px 16x 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: coral;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
